@@ -1,6 +1,6 @@
 # RSPF - Road Safety Performance Function
 
-A Python package for modeling road safety performance using **Negative Binomial regression**. This package is designed to help traffic safety researchers fit, analyze, and visualize crash prediction models with robust diagnostics.
+A Python package for modeling road safety performance using **Negative Binomial regression**. This package is designed to help traffic safety researchers fit, analyze, and visualize crash prediction models with diagnostics.
 
 ---
 
