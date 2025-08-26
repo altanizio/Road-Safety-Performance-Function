@@ -97,9 +97,9 @@ Plots the CURE (Cumulative Residuals) plot for a given covariate.
 
 ## References
 
-- **Hauer, E.** (2015). *The Art of Regression Modeling in Road Safety*. Springer. ISBN: 978-3-319-12528-2. Disponível em: [Springer Link](https://link.springer.com/book/10.1007/978-3-319-12529-9)
-- **Hauer, E.** (2004). Statistical Road Safety Modeling. *Transportation Research Record*, 1897(1), 11–16. DOI: [10.3141/1897-11](https://journals.sagepub.com/doi/10.3141/1897-11)
-- **Hauer, E.** (2015). Observational Before–After Studies in Road Safety: Estimating the Effect of Highway and Traffic Engineering Measures. *Springer*. ISBN: 978-3-319-35446-0. 
+- Hauer, E. (2015). The Art of Regression Modeling in Road Safety. Springer. ISBN: 978-3-319-12528-2.
+- Hauer, E. (2004). Statistical Road Safety Modeling. Transportation Research Record, 1897(1), 11–16. DOI: 10.3141/1897-11
+- Hauer, E. (2015). Observational Before–After Studies in Road Safety: Estimating the Effect of Highway and Traffic Engineering Measures. Springer. ISBN: 978-3-319-35446-0
 
 ## License
 
