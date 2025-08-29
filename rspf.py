@@ -178,29 +178,40 @@ class RSPF:
 
         return coef_table
 
-    def summary(self):
+    def _summary_text(self) -> str:
         """
-        Print a user-friendly summary of the fitted model,
-        including the estimated regression formula.
+        Build a user-friendly summary of the fitted model
+        as a single string, including the estimated regression formula.
         """
-
-        print("\n" + "=" * 60)
-        print(" ROAD SAFETY PERFORMANCE FUNCTION - SUMMARY ".center(60, "="))
-        print("=" * 60 + "\n")
+        lines = []
+        lines.append("\n" + "=" * 60)
+        lines.append(" ROAD SAFETY PERFORMANCE FUNCTION - SUMMARY ".center(60, "="))
+        lines.append("=" * 60 + "\n")
 
         # --- General statistics ---
-        print(self.metrics().to_string(index=False))
-        print("\n")
+        lines.append(self.metrics().to_string(index=False))
+        lines.append("\n")
 
         # --- Coefficients ---
-        print("Model Coefficients:\n")
-        print(self.coef().to_string(index=False))
-        print("\n")
+        lines.append("Model Coefficients:\n")
+        lines.append(self.coef().to_string(index=False))
+        lines.append("\n")
 
         # --- Model formula ---
-        print("Model Formula:\n")
-        print(self._build_rsp_formula())
-        print("\n" + "=" * 60 + "\n")
+        lines.append("Model Formula:\n")
+        lines.append(self._build_rsp_formula())
+        lines.append("\n" + "=" * 60 + "\n")
+
+        return "\n".join(lines)
+
+    def summary(self):
+        """
+        Print a user-friendly summary of the fitted model
+        and return the text.
+        """
+        text = self._summary_text()
+        print(text)
+        return text
 
     def cureplot(self, covariate: pd.Series, residuals: np.ndarray = None):
         """
