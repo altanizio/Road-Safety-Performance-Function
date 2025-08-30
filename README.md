@@ -1,4 +1,4 @@
-# RSPF - Road Safety Performance Function
+# SPF - Safety Performance Function
 
 A Python package for modeling road safety performance using **Negative Binomial regression**. This package is designed to help traffic safety researchers fit, analyze, and visualize crash prediction models with diagnostics.
 
@@ -94,13 +94,16 @@ Returns cumulative residuals for a covariate.
 
 Plots the CURE (Cumulative Residuals) plot for a given covariate.
 
-
 ## References
 
 - Hauer, E. (2015). The Art of Regression Modeling in Road Safety. Springer. ISBN: 978-3-319-12528-2.
 - Hauer, E. (2004). Statistical Road Safety Modeling. Transportation Research Record, 1897(1), 11–16. DOI: 10.3141/1897-11
 - Hauer, E. (2015). Observational Before–After Studies in Road Safety: Estimating the Effect of Highway and Traffic Engineering Measures. Springer. ISBN: 978-3-319-35446-0
 
-## License
+## Disclaimer
 
-This project is licensed under the MIT License.
+This project is an independent Python package for modeling road safety performance using Negative Binomial regression. While it shares conceptual similarities with the **SPF – Safety Performance Function** approach described in:
+
+> Green, Eric; Ross, Paul; Blackden, Christopher; Staats, William; and Souleyrette, Reginald, "SPF-R Online User Guide" (2022). Kentucky Transportation Center Research Report. 1762. [Link](https://uknowledge.uky.edu/ktc_researchreports/1762)
+
+it has been developed independently and is not affiliated with or endorsed by the authors or the Kentucky Transportation Center. Users should cite the original SPF sources when referring to their methodology.
