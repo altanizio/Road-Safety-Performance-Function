@@ -1,38 +1,20 @@
 # SPF - Safety Performance Function
 
-A Python package for modeling road safety performance using **Negative Binomial regression**. This package is designed to help traffic safety researchers fit, analyze, and visualize crash prediction models with diagnostics.
+A Python code for modeling road safety performance using **Negative Binomial regression**. This code is designed to help traffic safety researchers fit, analyze, and visualize crash prediction models with diagnostics. You can either use the **Python class** directly in your projects or the **Streamlit web app** to upload data and perform analyses without coding: [SPF Streamlit App](https://road-safety-performance-function.streamlit.app/)
 
 ---
 
 ## Features
 
-- Fit Negative Binomial models for crash count data.
-- Automatic log-transformation of selected independent variables.
-- Computes model diagnostics:
-  - Deviance
-  - Pearson Chi²
-  - Dispersion
-  - AIC and Log-Likelihood
-- Display coefficients and p-values in a user-friendly format.
-- Generate **CURE plots** (Cumulative Residuals) for model checking.
-- Construct RSPF-style formulas for predicted crash counts.
+- Fit Negative Binomial models for crash count data.  
+- Automatic log-transformation of selected independent variables.  
+- Computes model diagnostics: Deviance, Pearson Chi², Dispersion, AIC, Log-Likelihood.  
+- Display coefficients and p-values in a user-friendly format.  
+- Generate **CURE plots** (Cumulative Residuals) for model checking.  
+- Construct SPF-style formulas for predicted crash counts.  
+- Use via **Python class** or **Streamlit app** for interactive analysis.  
 
 ---
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/rspf.git
-cd rspf
-```
-
-Make sure you have the required dependencies installed:
-
-```
-pip install numpy pandas statsmodels scipy matplotlib
-```
 
 ## Usage
 
@@ -60,6 +42,15 @@ cure_data = model.cureplot(data["AADT"])
 model.plot_cureplot(data["AADT"])
 
 ```
+
+### Using the Streamlit app
+
+Visit [https://road-safety-performance-function.streamlit.app/](https://road-safety-performance-function.streamlit.app/) to:
+
+- Upload your crash and road data  
+- Fit Negative Binomial models interactively  
+- Explore diagnostics and visualizations  
+- Generate CURE plots without writing any code
 
 ## Methods
 
